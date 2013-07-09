@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+
+.c-select
+{
+	height:24px;
+	min-width:195px;
+	border:1px solid #c8c8c8;
+	display:table;
+	position:relative;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	cursor:pointer;
+	white-space:nowrap;
+	background:#fff;
+}
+
+	.c-select .c-select-container .c-select-text
+	{
+		line-height:24px;
+		padding:0 0 0 5px;
+	}
+	
+	.c-select .c-select-container .c-select-arrow
+	{
+		position:absolute;
+		top:0;
+		right:0;
+		width:22px;
+		height:24px;
+		background:url(img/components/select/arrow.png) 6px 9px no-repeat;
+	}
+	
+	.c-select .c-select-container:hover .c-select-arrow
+	{
+		background:url(img/components/select/arrow_hover.png) 6px 9px #e3e3e3 no-repeat;
+	}
+
+	.c-select .c-select-list
+	{
+		position:absolute;
+		top:24px;
+		left:-1px;
+		overflow:hidden;
+		border:1px solid #c8c8c8;
+		background:#fff;
+		display:none;
+		cursor:auto;
+	}
+	
+		.c-select .c-select-list .c-select-left
+		{
+			float:left;
+			position:relative;
+			left:1px;
+			border-right:1px solid #c8c8c8;
+			z-index:10000;
+		}
+	
+			.c-select .c-select-list .c-select-list-left-element
+			{
+				padding:0 20px 0 10px;
+				height:24px;
+				line-height:24px;
+				position:relative;
+				left:-1px;
+				cursor:pointer;
+			}
+			
+			.c-select .c-select-list .c-select-list-left-element:hover
+			{
+				background:#e3e3e3;
+				color:#000;
+			}
+			
+			
+				.c-select .c-select-list .c-select-list-right-element:hover
+				{
+					background:#e3e3e3;
+					color:#000;
+				}
+			
+			.c-select .c-select-list .c-select-list-left-element-active
+			{
+				background:url(img/components/select/active-bg.png) top repeat-x;
+				color:#fff;
+			}
+			
+				.c-select .c-select-list .c-select-list-left-element-active:hover
+				{
+					background:url(img/components/select/active-bg.png) top repeat-x;
+					color:#fff;
+				}
+			
+			.c-select .c-select-list .c-select-list-left-element-active .c-select-arrow
+			{
+				position:absolute;
+				top:0;
+				right:-9px;
+				width:9px;
+				height:24px;
+				background:url(img/components/select/active-arrow.png) left top no-repeat;
+			}
+			
+			
+		.c-select .c-select-list .c-select-right
+		{
+			float:left;
+			position:relative;
+			border-left:1px solid #c8c8c8;
+			display:none;
+			cursor:pointer;
+		}
+	
+			.c-select .c-select-list .c-select-list-right-element
+			{
+				padding:0 20px 0 10px;
+				height:24px;
+				line-height:24px;
+			}
+			
+			.c-select .c-select-list .c-select-list-right-element-active
+			{
+				background:url(img/components/select/active-bg.png) top repeat-x;
+				color:#fff;
+			}
+			
+			.c-select .c-select-list .c-select-list-right-element-active:hover
+			{
+				background:url(img/components/select/active-bg.png) top repeat-x;
+				color:#fff;
+			}
